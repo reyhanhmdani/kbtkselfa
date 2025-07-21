@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KB &TK Selfa - Pendidikan Berkualitas untuk Anak Usia Dini</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body class="font-sans text-text">
+    <!-- Floating Navigation -->
+    <nav id="mainNav" class="hidden md:flex floating-nav fixed top-0 left-0 right-0 z-50 bg-white md:bg-transparent py-3 md:py-4">
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center">
+            <div class="w-12 h-12 rounded-full flex items-center justify-center mr-3">
+              <img src="logo-tk.png" alt="Logo TK Selfa" class="h-full w-full object-contain rounded-full" />
+            </div>
+            <a href="#" class="text-xl font-bold text-secondary">KB & TK <span class="text-primary">Selfa</span></a>
+          </div>
+
+          <div class="space-x-8">
+            <a href="#home" class="text-white hover:text-primary font-medium"> <i class="fas fa-home text-lg mr-2"></i>Beranda </a>
+            <a href="#about" class="text-white hover:text-primary font-medium">
+              <i class="fas fa-info-circle text-lg mr-2"></i>Tentang Kami
+            </a>
+            <a href="#program" class="text-white hover:text-primary font-medium"> <i class="fas fa-lightbulb text-lg mr-2"></i>Program </a>
+            <a href="#gallery" class="text-white hover:text-primary font-medium"> <i class="fas fa-images text-lg mr-2"></i>Galeri </a>
+            <a href="#contact" class="text-white hover:text-primary font-medium"> <i class="fas fa-envelope text-lg mr-2"></i>Kontak </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="fixed bottom-0 left-0 right-0 md:hidden bg-white shadow-lg border-t border-gray-200 z-[999]">
+      <div class="flex justify-around items-center h-16">
+        <a href="#home" class="flex flex-col items-center justify-center text-secondary hover:text-primary p-2">
+          <i class="fas fa-home text-xl"></i>
+          <span class="text-xs mt-1">Beranda</span>
+        </a>
+        <a href="#about" class="flex flex-col items-center justify-center text-secondary hover:text-primary p-2">
+          <i class="fas fa-info-circle text-xl"></i>
+          <span class="text-xs mt-1">Tentang Kami</span>
+        </a>
+        <a href="#program" class="flex flex-col items-center justify-center text-secondary hover:text-primary p-2">
+          <i class="fas fa-lightbulb text-xl"></i>
+          <span class="text-xs mt-1">Program</span>
+        </a>
+        <a href="#gallery" class="flex flex-col items-center justify-center text-secondary hover:text-primary p-2">
+          <i class="fas fa-images text-xl"></i>
+          <span class="text-xs mt-1">Galeri</span>
+        </a>
+        <a href="#contact" class="flex flex-col items-center justify-center text-secondary hover:text-primary p-2">
+          <i class="fas fa-envelope text-xl"></i>
+          <span class="text-xs mt-1">Kontak</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center">
+      <div class="absolute inset-0 bg-gray-900">
+        <img
+          src="https://images.unsplash.com/photo-1600861195091-690c92f1d2cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+          alt="TK Selfa"
+          class="w-full h-full object-cover opacity-70"
+        />
+      </div>
+      <div class="hero-overlay absolute inset-0"></div>
+
+      <div class="container mx-auto px-4 z-10 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">Selamat Datang di <span class="text-yellow">KB & TK Selfa</span></h1>
+        <p class="text-xl md:text-2xl text-light mb-8 max-w-3xl mx-auto">
+          Membentuk generasi cerdas, kreatif, dan berakhlak mulia melalui pendidikan usia dini yang menyenangkan.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="#program" class="bg-primary hover:bg-secondary text-white font-bold py-3 px-8 rounded-full transition duration-300"
+            >Lihat Program</a
+          >
+          <a href="#contact" class="bg-white hover:bg-light text-secondary font-bold py-3 px-8 rounded-full transition duration-300"
+            >Hubungi Kami</a
+          >
+        </div>
+      </div>
+
+      <div class="absolute bottom-10 left-0 right-0 flex justify-center">
+        <a href="#about" class="text-white animate-bounce">
+          <i class="fas fa-chevron-down text-3xl"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-24 bg-light">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Tentang Kami</h2>
+          <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+          <p class="text-lg text-text max-w-3xl mx-auto">
+            KB & TK Selfa adalah lembaga pendidikan anak usia dini yang berdedikasi untuk menciptakan lingkungan belajar yang optimal bagi
+            perkembangan si kecil. Kami tidak hanya berkomitmen pada pendidikan berkualitas, tetapi juga berfokus pada pembentukan karakter
+            Islami dan pengalaman belajar yang menyenangkan, terintegrasi dengan kehidupan sehari-hari anak.
+          </p>
+        </div>
+
+        <div class="flex flex-col lg:flex-row gap-12 items-center">
+          <div class="lg:w-1/2">
+            <img src="visimisi.JPEG" alt="TK Selfa" class="rounded-lg shadow-xl w-full h-auto" />
+          </div>
+
+          <div class="lg:w-1/2">
+            <h3 class="text-2xl font-bold text-secondary mb-6">Visi & Misi Kami</h3>
+
+            <div class="mb-8">
+              <h4 class="text-xl font-semibold text-primary mb-3 flex items-center"><i class="fas fa-bullseye mr-2"></i> Visi Sekolah</h4>
+              <p class="text-text">
+                Membangun lingkungan pembelajaran paling ideal dalam islami, mutakhir, menyenangkan dan terintegritas dengan aktivitas
+                kehidupan bagi anak anak
+              </p>
+            </div>
+
+            <div>
+              <h4 class="text-xl font-semibold text-primary mb-3 flex items-center"><i class="fas fa-tasks mr-2"></i> Misi Sekolah</h4>
+              <ul class="space-y-3 text-text">
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green mt-1 mr-2"></i>
+                  <span>Membiasakan perilaku Islami dalam kehidupan sehari hari sesuai dengan Al-Qur'an dan As Sunnah.</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green mt-1 mr-2"></i>
+                  <span>Melaksanakan pembelajaran sesuai dengan perkembangan anak.</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green mt-1 mr-2"></i>
+                  <span>Menjadikan Para Nabi sebagai role model bagi anak anak.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Program Section -->
+    <section id="program" class="py-16 md:py-24 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Program Unggulan</h2>
+          <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+          <p class="text-lg text-text max-w-3xl mx-auto">
+            Sekolah yang dibangun karena impian tentang adanya sebuah sekolah dimana anak-anak bisa kembali menjadi generasi terbaik tanpa
+            batasan angka-angka. Bermain dan tumbuh dengan Alam. Dan menguat lahir batinnya. Berada di bawah naungan Yayasan Rumah Ilmu
+            Nusantara yang berlokasi di kota Klaten. Salam Selfa menyapa Indonesia.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="program-card bg-light rounded-lg overflow-hidden shadow-md transition duration-300 hover:shadow-lg">
+            <div class="p-6">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mr-4">
+                  <i class="fas fa-flask text-primary text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-secondary">Science Experiment</h3>
+              </div>
+              <p class="text-text mb-4">
+                Mengenalkan konsep dasar sains melalui eksperimen sederhana yang aman dan interaktif, menumbuhkan rasa ingin tahu anak.
+              </p>
+              <ul class="space-y-2 text-sm text-text">
+                <li class="flex items-center"><i class="fas fa-check-circle text-green mr-2"></i> Eksplorasi fenomena alam</li>
+                <li class="flex items-center"><i class="fas fa-check-circle text-green mr-2"></i> Percobaan sederhana dan aman</li>
+                <li class="flex items-center"><i class="fas fa-check-circle text-green mr-2"></i> Belajar sebab-akibat</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="program-card bg-light rounded-lg overflow-hidden shadow-md transition duration-300 hover:shadow-lg">
+            <div class="p-6">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mr-4">
+                  <i class="fas fa-pencil-ruler text-primary text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-secondary">Calistung</h3>
+              </div>
+              <p class="text-text mb-4">
+                Membangun fondasi membaca, menulis, dan berhitung dengan metode yang menyenangkan dan sesuai usia anak.
+              </p>
+              <ul class="space-y-2 text-sm text-text">
+                <li class="flex items-center"><i class="fas fa-check-circle text-green mr-2"></i> Pengenalan huruf dan angka</li>
+                <li class="flex items-center"><i class="fas fa-check-circle text-green mr-2"></i> Latihan menulis dasar</li>
+                <li class="flex items-center"><i class="fas fa-check-circle text-green mr-2"></i> Konsep berhitung sederhana</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="program-card bg-light rounded-lg overflow-hidden shadow-md transition duration-300 hover:shadow-lg">
+            <div class="p-6">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mr-4">
+                  <i class="fas fa-lightbulb text-primary text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-secondary">Creative Project</h3>
+              </div>
+              <p class="text-text mb-4">
+                Mendorong imajinasi dan kreativitas anak melalui proyek-proyek seni dan kerajinan tangan yang inovatif.
+              </p>
+              <ul class="space-y-2 text-sm text-text">
+                <li class="flex items-center"><i class="fas fa-check-circle text-green mr-2"></i> Membuat karya yang menabjubkan</li>
+                <li class="flex items-center"><i class="fas fa-check-circle text-green mr-2"></i> Mengembangkan ide orisinal</li>
+                <li class="flex items-center"><i class="fas fa-check-circle text-green mr-2"></i> Kolaborasi dalam proyek kelompok</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="program-card bg-light rounded-lg overflow-hidden shadow-md transition duration-300 hover:shadow-lg">
+            <div class="p-6">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mr-4">
+                  <i class="fas fa-palette text-primary text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-secondary">Fun Drawing</h3>
+              </div>
+              <p class="text-text mb-4">
+                Mengasah keterampilan motorik halus dan ekspresi diri anak melalui kegiatan menggambar dan mewarnai yang ceria.
+              </p>
+              <ul class="space-y-2 text-sm text-text">
+                <li class="flex items-center"><i class="fas fa-check-circle text-green mr-2"></i> Teknik menggambar dasar</li>
+                <li class="flex items-center"><i class="fas fa-check-circle text-green mr-2"></i> Eksplorasi warna</li>
+                <li class="flex items-center"><i class="fas fa-check-circle text-green mr-2"></i> Menggambar bebas dan terstruktur</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="program-card bg-light rounded-lg overflow-hidden shadow-md transition duration-300 hover:shadow-lg">
+            <div class="p-6">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mr-4">
+                  <i class="fas fa-quran text-primary text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-secondary">Tahfidz</h3>
+              </div>
+              <p class="text-text mb-4">
+                Membimbing anak untuk menghafal ayat-ayat pendek Al-Qur'an dengan metode yang mudah dan menyenangkan.
+              </p>
+              <ul class="space-y-2 text-sm text-text">
+                <li class="flex items-center"><i class="fas fa-check-circle text-green mr-2"></i> Hafalan surat-surat pendek</li>
+                <li class="flex items-center"><i class="fas fa-check-circle text-green mr-2"></i> Pengenalan tajwid dasar</li>
+                <li class="flex items-center"><i class="fas fa-check-circle text-green mr-2"></i> Kecintaan pada Al-Qur'an</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="program-card bg-light rounded-lg overflow-hidden shadow-md transition duration-300 hover:shadow-lg">
+            <div class="p-6">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mr-4">
+                  <i class="fas fa-running text-primary text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-secondary">Olahraga</h3>
+              </div>
+              <p class="text-text mb-4">
+                Mengembangkan kemampuan motorik kasar dan kebugaran fisik anak melalui berbagai aktivitas olahraga dan permainan gerak.
+              </p>
+              <ul class="space-y-2 text-sm text-text">
+                <li class="flex items-center"><i class="fas fa-check-circle text-green mr-2"></i> Senam dan peregangan</li>
+                <li class="flex items-center"><i class="fas fa-check-circle text-green mr-2"></i> Permainan bola</li>
+                <li class="flex items-center"><i class="fas fa-check-circle text-green mr-2"></i> Latihan keseimbangan</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="program-card bg-light rounded-lg overflow-hidden shadow-md transition duration-300 hover:shadow-lg">
+            <div class="p-6">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mr-4">
+                  <i class="fas fa-film text-primary text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-secondary">Movie Time</h3>
+              </div>
+              <p class="text-text mb-4">
+                Menonton film edukatif dan cerita anak yang dipilih secara cermat untuk menstimulasi imajinasi dan moral anak.
+              </p>
+              <ul class="space-y-2 text-sm text-text">
+                <li class="flex items-center"><i class="fas fa-check-circle text-green mr-2"></i> Film edukasi dan kartun</li>
+                <li class="flex items-center"><i class="fas fa-check-circle text-green mr-2"></i> Diskusi singkat pesan moral</li>
+                <li class="flex items-center"><i class="fas fa-check-circle text-green mr-2"></i> Meningkatkan fokus dan perhatian</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="program-card bg-light rounded-lg overflow-hidden shadow-md transition duration-300 hover:shadow-lg">
+            <div class="p-6">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mr-4">
+                  <i class="fas fa-tree text-primary text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-secondary">Outbond</h3>
+              </div>
+              <p class="text-text mb-4">Kegiatan luar ruangan yang seru untuk melatih kemandirian, keberanian, dan kerja sama tim anak.</p>
+              <ul class="space-y-2 text-sm text-text">
+                <li class="flex items-center"><i class="fas fa-check-circle text-green mr-2"></i> Permainan luar ruangan</li>
+                <li class="flex items-center"><i class="fas fa-check-circle text-green mr-2"></i> Latihan motorik kasar</li>
+                <li class="flex items-center"><i class="fas fa-check-circle text-green mr-2"></i> Menumbuhkan rasa percaya diri</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="program-card bg-light rounded-lg overflow-hidden shadow-md transition duration-300 hover:shadow-lg">
+            <div class="p-6">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mr-4">
+                  <i class="fas fa-cookie-bite text-primary text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-secondary">Cooking Class</h3>
+              </div>
+              <p class="text-text mb-4">
+                Mengajarkan anak keterampilan dasar memasak dan pentingnya gizi melalui aktivitas dapur yang menyenangkan dan aman.
+              </p>
+              <ul class="space-y-2 text-sm text-text">
+                <li class="flex items-center"><i class="fas fa-check-circle text-green mr-2"></i> Membuat makanan sederhana</li>
+                <li class="flex items-center"><i class="fas fa-check-circle text-green mr-2"></i> Pengenalan bahan makanan</li>
+                <li class="flex items-center"><i class="fas fa-check-circle text-green mr-2"></i> Keterampilan hidup praktis</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="program-card bg-light rounded-lg overflow-hidden shadow-md transition duration-300 hover:shadow-lg">
+            <div class="p-6">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mr-4">
+                  <i class="fas fa-puzzle-piece text-primary text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-secondary">Fun Game</h3>
+              </div>
+              <p class="text-text mb-4">Berbagai permainan yang mengasyikkan untuk melatih kemampuan kognitif, sosial, dan fisik anak.</p>
+              <ul class="space-y-2 text-sm text-text">
+                <li class="flex items-center"><i class="fas fa-check-circle text-green mr-2"></i> Permainan edukatif interaktif</li>
+                <li class="flex items-center"><i class="fas fa-check-circle text-green mr-2"></i> Melatih kerja sama tim</li>
+                <li class="flex items-center"><i class="fas fa-check-circle text-green mr-2"></i> Meningkatkan problem-solving</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 md:py-24 bg-light">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Galeri Kegiatan</h2>
+          <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+          <p class="text-lg text-text max-w-3xl mx-auto">
+            Momen berharga dan kegiatan seru di TK Selfa yang menciptakan kenangan indah bagi anak-anak.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <!-- Gallery Item 1 -->
+          <div class="gallery-item overflow-hidden rounded-lg shadow-md">
+            <div class="aspect-w-1 aspect-h-1">
+              <img src="image/sholat dhuha.jpg" class="w-full h-full object-cover transition duration-500" />
+            </div>
+          </div>
+
+          <!-- Gallery Item 2 -->
+          <div class="gallery-item overflow-hidden rounded-lg shadow-md">
+            <div class="aspect-w-1 aspect-h-1">
+              <img src="image/sentra seni.jpg" class="w-full h-full object-cover transition duration-500" />
+            </div>
+          </div>
+
+          <!-- Gallery Item 3 -->
+          <div class="gallery-item overflow-hidden rounded-lg shadow-md">
+            <div class="aspect-w-1 aspect-h-1">
+              <img src="image/swimming class.jpg" class="w-full h-full object-cover transition duration-500" />
+            </div>
+          </div>
+
+          <!-- Gallery Item 4 -->
+          <div class="gallery-item overflow-hidden rounded-lg shadow-md">
+            <div class="aspect-w-1 aspect-h-1">
+              <img src="image/KBM TK.JPEG" class="w-full h-full object-cover transition duration-500" />
+            </div>
+          </div>
+
+          <!-- Gallery Item 5 -->
+          <div class="gallery-item overflow-hidden rounded-lg shadow-md">
+            <div class="aspect-w-1 aspect-h-1">
+              <img src="image/IMG_3091.JPG" class="w-full h-full object-cover transition duration-500" />
+            </div>
+          </div>
+
+          <!-- Gallery Item 6 -->
+          <div class="gallery-item overflow-hidden rounded-lg shadow-md">
+            <div class="aspect-w-1 aspect-h-1">
+              <img src="image/IMG_3454.JPEG" class="w-full h-full object-cover transition duration-500" />
+            </div>
+          </div>
+
+          <!-- Gallery Item 7 -->
+          <div class="gallery-item overflow-hidden rounded-lg shadow-md">
+            <div class="aspect-w-1 aspect-h-1">
+              <img src="image/IMG_5136.jpg" class="w-full h-full object-cover transition duration-500" />
+            </div>
+          </div>
+
+          <!-- Gallery Item 8 -->
+          <div class="gallery-item overflow-hidden rounded-lg shadow-md">
+            <div class="aspect-w-1 aspect-h-1">
+              <img src="image/IMG_3458.JPEG" class="w-full h-full object-cover transition duration-500" />
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-12">
+          <a
+            href="#"
+            class="inline-block bg-primary hover:bg-secondary text-white font-bold py-3 px-8 rounded-full transition duration-300"
+          >
+            Lihat Lebih Banyak Foto
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-16 md:py-24 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Tim Pengajar Kami</h2>
+          <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+          <p class="text-lg text-text max-w-3xl mx-auto">
+            Tim pendidik profesional yang penuh dedikasi dan kasih sayang dalam membimbing anak-anak.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Team Member 1 -->
+          <div class="team-card bg-light rounded-lg overflow-hidden shadow-md text-center p-6">
+            <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-primary mb-6">
+              <img
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1976&q=80"
+                alt="Guru 1"
+                class="w-full h-full object-cover transition duration-500"
+              />
+            </div>
+            <h3 class="text-xl font-bold text-secondary mb-2">Bu Siti</h3>
+            <p class="text-primary font-medium mb-4">Kepala Sekolah</p>
+            <p class="text-text mb-4">Pendidikan: S1 Pendidikan Anak Usia Dini, Universitas Negeri Jakarta</p>
+            <div class="flex justify-center space-x-4">
+              <a href="#" class="text-secondary hover:text-primary">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="text-secondary hover:text-primary">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="text-secondary hover:text-primary">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Team Member 2 -->
+          <div class="team-card bg-light rounded-lg overflow-hidden shadow-md text-center p-6">
+            <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-primary mb-6">
+              <img
+                src="https://images.unsplash.com/photo-1562788869-4ed32648eb72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Guru 2"
+                class="w-full h-full object-cover transition duration-500"
+              />
+            </div>
+            <h3 class="text-xl font-bold text-secondary mb-2">Bu Rina</h3>
+            <p class="text-primary font-medium mb-4">Guru Kelas A</p>
+            <p class="text-text mb-4">Pendidikan: S1 Psikologi Pendidikan, Universitas Indonesia</p>
+            <div class="flex justify-center space-x-4">
+              <a href="#" class="text-secondary hover:text-primary">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="text-secondary hover:text-primary">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="text-secondary hover:text-primary">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Team Member 3 -->
+          <div class="team-card bg-light rounded-lg overflow-hidden shadow-md text-center p-6">
+            <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-primary mb-6">
+              <img
+                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1976&q=80"
+                alt="Guru 3"
+                class="w-full h-full object-cover transition duration-500"
+              />
+            </div>
+            <h3 class="text-xl font-bold text-secondary mb-2">Bu Dini</h3>
+            <p class="text-primary font-medium mb-4">Guru Kelas B</p>
+            <p class="text-text mb-4">Pendidikan: S1 Pendidikan Guru PAUD, Universitas Pendidikan Indonesia</p>
+            <div class="flex justify-center space-x-4">
+              <a href="#" class="text-secondary hover:text-primary">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="text-secondary hover:text-primary">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="text-secondary hover:text-primary">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Team Member 4 -->
+          <div class="team-card bg-light rounded-lg overflow-hidden shadow-md text-center p-6">
+            <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-primary mb-6">
+              <img
+                src="https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1976&q=80"
+                alt="Guru 4"
+                class="w-full h-full object-cover transition duration-500"
+              />
+            </div>
+            <h3 class="text-xl font-bold text-secondary mb-2">Bu Maya</h3>
+            <p class="text-primary font-medium mb-4">Guru Musik & Seni</p>
+            <p class="text-text mb-4">Pendidikan: S1 Seni Musik, Institut Seni Indonesia</p>
+            <div class="flex justify-center space-x-4">
+              <a href="#" class="text-secondary hover:text-primary">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="text-secondary hover:text-primary">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="text-secondary hover:text-primary">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-secondary text-white">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <!-- Stat 1 -->
+          <div class="stat-card p-6 transition duration-300">
+            <div class="text-4xl md:text-5xl font-bold mb-2">15+</div>
+            <div class="text-lg">Tahun Pengalaman</div>
+          </div>
+
+          <!-- Stat 2 -->
+          <div class="stat-card p-6 transition duration-300">
+            <div class="text-4xl md:text-5xl font-bold mb-2">70+</div>
+            <div class="text-lg">Siswa Lulus</div>
+          </div>
+
+          <!-- Stat 3 -->
+          <div class="stat-card p-6 transition duration-300">
+            <div class="text-4xl md:text-5xl font-bold mb-2">10+</div>
+            <div class="text-lg">Guru Berpengalaman</div>
+          </div>
+
+          <!-- Stat 4 -->
+          <div class="stat-card p-6 transition duration-300">
+            <div class="text-4xl md:text-5xl font-bold mb-2">100%</div>
+            <div class="text-lg">Kepuasan Orang Tua</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 md:py-24 bg-light">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Apa Kata Orang Tua?</h2>
+          <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+          <p class="text-lg text-text max-w-3xl mx-auto">
+            Testimoni dari orang tua yang telah mempercayakan pendidikan anaknya di TK Selfa.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Testimonial 1 -->
+          <div class="bg-white p-8 rounded-lg shadow-md">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                <img
+                  src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+                  alt="Orang Tua 1"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <h4 class="font-bold text-secondary">Bapak Andi</h4>
+                <p class="text-sm text-text">Orang Tua dari Rafa</p>
+              </div>
+            </div>
+            <p class="text-text italic">
+              "Anak saya sangat senang bersekolah di TK Selfa. Metode pembelajarannya menyenangkan dan guru-gurunya sangat perhatian.
+              Perkembangan sosial dan akademik anak saya meningkat pesat."
+            </p>
+            <div class="flex mt-4 text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="bg-white p-8 rounded-lg shadow-md">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                <img
+                  src="https://images.unsplash.com/photo-1542103749-8ef59b94f47e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                  alt="Orang Tua 2"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <h4 class="font-bold text-secondary">Ibu Sinta</h4>
+                <p class="text-sm text-text">Orang Tua dari Naura</p>
+              </div>
+            </div>
+            <p class="text-text italic">
+              "Saya sangat puas dengan perkembangan anak saya di TK Selfa. Program-programnya sangat kreatif dan mendidik. Anak saya
+              sekarang lebih mandiri dan percaya diri."
+            </p>
+            <div class="flex mt-4 text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="bg-white p-8 rounded-lg shadow-md">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                <img
+                  src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+                  alt="Orang Tua 3"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <h4 class="font-bold text-secondary">Bapak Rudi</h4>
+                <p class="text-sm text-text">Orang Tua dari Arka</p>
+              </div>
+            </div>
+            <p class="text-text italic">
+              "TK Selfa memberikan pendidikan yang seimbang antara akademik dan karakter. Anak saya belajar banyak nilai moral dan spiritual
+              yang sangat penting untuk perkembangannya."
+            </p>
+            <div class="flex mt-4 text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Map Section -->
+    <section id="contact" class="py-16 md:py-24 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Hubungi Kami</h2>
+          <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+          <p class="text-lg text-text max-w-3xl mx-auto">
+            Kami siap menjawab pertanyaan Anda dan memberikan informasi lebih lanjut tentang TK Selfa.
+          </p>
+        </div>
+
+        <div class="flex flex-col lg:flex-row gap-12">
+          <div class="lg:w-1/2">
+            <div class="bg-light rounded-lg shadow-md p-8">
+              <h3 class="text-2xl font-bold text-secondary mb-6">Kirim Pesan</h3>
+
+              <form>
+                <div class="mb-6">
+                  <label for="name" class="block text-text font-medium mb-2">Nama Lengkap</label>
+                  <input
+                    type="text"
+                    id="name"
+                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                  />
+                </div>
+
+                <div class="mb-6">
+                  <label for="email" class="block text-text font-medium mb-2">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                  />
+                </div>
+
+                <div class="mb-6">
+                  <label for="phone" class="block text-text font-medium mb-2">Nomor Telepon</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                  />
+                </div>
+
+                <div class="mb-6">
+                  <label for="message" class="block text-text font-medium mb-2">Pesan</label>
+                  <textarea
+                    id="message"
+                    rows="5"
+                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="w-full bg-primary hover:bg-secondary text-white font-bold py-3 px-6 rounded-lg transition duration-300"
+                >
+                  Kirim Pesan
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div class="lg:w-1/2">
+            <div class="bg-light rounded-lg shadow-md p-8 h-full">
+              <h3 class="text-2xl font-bold text-secondary mb-6">Informasi Kontak</h3>
+
+              <div class="space-y-6">
+                <div class="flex items-start">
+                  <div class="w-10 h-10 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mr-4 mt-1">
+                    <i class="fas fa-map-marker-alt text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-secondary mb-1">Alamat</h4>
+                    <p class="text-text">
+                      Jl. Wahidin Sudiro Husodo No.36, Bramen, Sekarsuli, Kec. Klaten Utara, Kabupaten Klaten, Jawa Tengah 57438
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div class="w-10 h-10 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mr-4 mt-1">
+                    <i class="fas fa-phone-alt text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-secondary mb-1">Telepon</h4>
+                    <p class="text-text">(021) 12345678</p>
+                    <p class="text-text">0812 3456 7890 (WhatsApp)</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div class="w-10 h-10 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mr-4 mt-1">
+                    <i class="fas fa-envelope text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-secondary mb-1">Email</h4>
+                    <p class="text-text">info@tksefla.sch.id</p>
+                    <p class="text-text">admisi@tksefla.sch.id</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div class="w-10 h-10 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mr-4 mt-1">
+                    <i class="fas fa-clock text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-secondary mb-1">Jam Operasional</h4>
+                    <p class="text-text">Senin - Jumat: 07.00 - 16.00 WIB</p>
+                    <p class="text-text">Sabtu: 08.00 - 12.00 WIB</p>
+                    <p class="text-text">Minggu & Hari Libur: Tutup</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-8">
+                <h4 class="font-bold text-secondary mb-4">Ikuti Kami</h4>
+                <div class="flex space-x-4">
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full bg-secondary hover:bg-primary text-white flex items-center justify-center transition duration-300"
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full bg-secondary hover:bg-primary text-white flex items-center justify-center transition duration-300"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full bg-secondary hover:bg-primary text-white flex items-center justify-center transition duration-300"
+                  >
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full bg-secondary hover:bg-primary text-white flex items-center justify-center transition duration-300"
+                  >
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 rounded-lg overflow-hidden shadow-xl">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.11980438448148!2d110.60416700745394!3d-7.692070618370334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a4304e732ea4d%3A0x3a51e9f83b54f632!2sKB%20%26%20TK%20SAYF%20EL%20FALAH!5e0!3m2!1sid!2sid!4v1753072343013!5m2!1sid!2sid"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Column 1 -->
+          <div>
+            <div class="flex items-center mb-4">
+              <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center mr-3">
+                <i class="fas fa-child text-white"></i>
+              </div>
+              <a href="#" class="text-xl font-bold text-white">TK <span class="text-primary">Selfa</span></a>
+            </div>
+            <p class="mb-4">
+              TK Selfa memberikan pendidikan berkualitas untuk anak usia dini dengan pendekatan yang menyenangkan dan sesuai perkembangan
+              anak.
+            </p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-white hover:text-primary">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="text-white hover:text-primary">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="text-white hover:text-primary">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="#" class="text-white hover:text-primary">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Column 2 -->
+          <div>
+            <h3 class="text-lg font-bold mb-4">Tautan Cepat</h3>
+            <ul class="space-y-2">
+              <li><a href="#home" class="hover:text-primary transition duration-300">Beranda</a></li>
+              <li><a href="#about" class="hover:text-primary transition duration-300">Tentang Kami</a></li>
+              <li><a href="#program" class="hover:text-primary transition duration-300">Program</a></li>
+              <li><a href="#gallery" class="hover:text-primary transition duration-300">Galeri</a></li>
+              <li><a href="#team" class="hover:text-primary transition duration-300">Guru</a></li>
+              <li><a href="#contact" class="hover:text-primary transition duration-300">Kontak</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3 -->
+          <div>
+            <h3 class="text-lg font-bold mb-4">Program</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="hover:text-primary transition duration-300">Belajar Sambil Bermain</a></li>
+              <li><a href="#" class="hover:text-primary transition duration-300">Pengembangan Bahasa</a></li>
+              <li><a href="#" class="hover:text-primary transition duration-300">Seni & Kreativitas</a></li>
+              <li><a href="#" class="hover:text-primary transition duration-300">Pendidikan Karakter</a></li>
+              <li><a href="#" class="hover:text-primary transition duration-300">Kegiatan Outdoor</a></li>
+              <li><a href="#" class="hover:text-primary transition duration-300">Persiapan SD</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 4 -->
+          <div>
+            <h3 class="text-lg font-bold mb-4">Newsletter</h3>
+            <p class="mb-4">Daftar newsletter kami untuk mendapatkan informasi terbaru tentang kegiatan dan program TK Selfa.</p>
+            <form class="flex">
+              <input type="email" placeholder="Email Anda" class="px-4 py-2 rounded-l-lg w-full focus:outline-none text-text" />
+              <button type="submit" class="bg-primary hover:bg-green text-white px-4 py-2 rounded-r-lg">
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+          <p>&copy; 2025 KB & TK Selfa. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a
+      href="#home"
+      id="backToTop"
+      class="fixed bottom-6 right-6 w-12 h-12 bg-primary hover:bg-secondary text-white rounded-full flex items-center justify-center shadow-lg transition duration-300 opacity-0 invisible"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script>
+      // Navbar Scroll Effect
+      window.addEventListener("scroll", function () {
+        const nav = document.getElementById("mainNav");
+        // Pilih semua tautan <a> di dalam nav utama untuk desktop
+        // Kita tidak lagi memilih div .md\:flex, tapi langsung a di dalam space-x-8
+        const navLinks = document.querySelectorAll("#mainNav .space-x-8 a");
+
+        if (window.scrollY > 100) {
+          nav.classList.add("scrolled");
+          nav.classList.remove("md:bg-transparent");
+          nav.classList.add("md:bg-white");
+
+          // Ubah warna teks DAN ikon menjadi text-secondary saat discroll
+          navLinks.forEach((link) => {
+            link.classList.remove("text-white");
+            link.classList.add("text-secondary");
+            // Jika ikon adalah anak langsung dari <a>, ini akan mengubah warnanya juga.
+            // Jika tidak, Anda bisa menargetkan ikon secara spesifik jika diperlukan:
+            // const icon = link.querySelector('i');
+            // if (icon) {
+            //     icon.classList.remove('text-white');
+            //     icon.classList.add('text-secondary');
+            // }
+          });
+        } else {
+          nav.classList.remove("scrolled");
+          nav.classList.add("md:bg-transparent");
+          nav.classList.remove("md:bg-white");
+
+          // Ubah warna teks DAN ikon kembali menjadi text-white saat di paling atas
+          navLinks.forEach((link) => {
+            link.classList.remove("text-secondary");
+            link.classList.add("text-white");
+            // const icon = link.querySelector('i');
+            // if (icon) {
+            //     icon.classList.remove('text-secondary');
+            //     icon.classList.add('text-white');
+            // }
+          });
+        }
+      });
+
+      // Back to Top Button
+      window.addEventListener("scroll", function () {
+        const backToTopButton = document.getElementById("backToTop");
+        if (window.scrollY > 300) {
+          backToTopButton.classList.remove("opacity-0", "invisible");
+          backToTopButton.classList.add("opacity-100", "visible");
+        } else {
+          backToTopButton.classList.add("opacity-0", "invisible");
+          backToTopButton.classList.remove("opacity-100", "visible");
+        }
+      });
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute("href");
+          if (targetId === "#") return;
+
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            // Baris ini dihapus karena mobileMenu (bottom nav) tidak di-toggle hidden/visible
+            // const mobileMenu = document.getElementById("mobileMenu");
+            // mobileMenu.classList.add("hidden");
+
+            // Scroll to target
+            window.scrollTo({
+              top: targetElement.offsetTop,
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
