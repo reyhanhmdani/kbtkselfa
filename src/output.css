@@ -1035,7 +1035,7 @@ video {
 
 .bg-secondary {
   --tw-bg-opacity: 1;
-  background-color: rgb(28 95 194 / var(--tw-bg-opacity, 1));
+  background-color: rgb(47 48 138 / var(--tw-bg-opacity, 1));
 }
 
 .bg-thirdy {
@@ -1199,7 +1199,7 @@ video {
 
 .text-secondary {
   --tw-text-opacity: 1;
-  color: rgb(28 95 194 / var(--tw-text-opacity, 1));
+  color: rgb(47 48 138 / var(--tw-text-opacity, 1));
 }
 
 .text-text {
@@ -1334,7 +1334,7 @@ video {
 
 .hover\:border-secondary:hover {
   --tw-border-opacity: 1;
-  border-color: rgb(28 95 194 / var(--tw-border-opacity, 1));
+  border-color: rgb(47 48 138 / var(--tw-border-opacity, 1));
 }
 
 .hover\:bg-green:hover {
@@ -1354,7 +1354,7 @@ video {
 
 .hover\:bg-secondary:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(28 95 194 / var(--tw-bg-opacity, 1));
+  background-color: rgb(47 48 138 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:bg-opacity-30:hover {
