@@ -77,4 +77,34 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       });
     }
   });
+
+  // --- Animasi Fade-Up untuk Program Cards ---
+  function animateProgramCardsFadeUp(entries, observer) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // Hapus kelas yang menyembunyikan
+        entry.target.classList.remove("opacity-0", "translate-y-8");
+        // Tambahkan kelas untuk menampilkan
+        entry.target.classList.add("opacity-100", "translate-y-0");
+
+        // Berhenti mengamati elemen ini setelah animasinya dipicu
+        observer.unobserve(entry.target);
+      }
+    });
+  }
+
+  const programCardFadeUpOptions = {
+    root: null, // Mengamati relatif terhadap viewport
+    rootMargin: "0px",
+    threshold: 0.1, // Pemicu saat 10% dari kartu terlihat
+  };
+
+  const programCardFadeUpObserver = new IntersectionObserver(animateProgramCardsFadeUp, programCardFadeUpOptions);
+
+  // Amati semua program-card dengan atribut data-animate="true"
+  const programCardsToAnimate = document.querySelectorAll('.program-card[data-animate="true"]');
+
+  programCardsToAnimate.forEach((card) => {
+    programCardFadeUpObserver.observe(card);
+  });
 });
