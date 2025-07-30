@@ -13,10 +13,6 @@ body {
   padding-bottom: env(safe-area-inset-bottom);
 }
 
-/* .hero-overlay {
-  background-color: rgba(0, 0, 0, 0.6);
-} */
-
 .hero-overlay {
   background: linear-gradient(to right, rgba(0, 171, 103, 0.194), rgba(47, 49, 138, 0.336));
 }
