@@ -131,7 +131,7 @@
             <img src="visimisi.JPEG" alt="TK Selfa" class="rounded-lg shadow-xl w-full h-auto" />
           </div>
 
-          <div class="lg:w-1/2">
+          <div class="lg:w-1/2 bg-white bg-opacity-70 rounded-2xl border border-gray-300 p-5 inline-bloc">
             <h3 class="text-2xl font-bold text-secondary mb-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
               Visi & Misi Kami
             </h3>
@@ -723,7 +723,7 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="py-16 md:py-24 bg-light">
+    <section class="py-16 md:py-24 testimonial-childish-bg">
       <div class="container mx-auto px-4">
         <div class="text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Apa Kata Orang Tua?</h2>
@@ -810,7 +810,7 @@
     </section>
 
     <!-- Contact & Map Section -->
-    <section id="contact" class="py-16 md:py-24 bg-white">
+    <section id="contact" class="py-16 md:py-24 contactmap-childish-bg">
       <div class="container mx-auto px-4">
         <div class="text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Hubungi Kami</h2>
@@ -821,169 +821,123 @@
         </div>
 
         <div class="flex flex-col lg:flex-row gap-12">
-          <div class="lg:w-1/2">
-            <div class="bg-light rounded-lg shadow-md p-8">
-              <h3 class="text-2xl font-bold text-secondary mb-6">Kirim Pesan</h3>
+          <div class="w-full">
+            <div class="bg-light rounded-lg shadow-md p-8 h-full flex flex-col lg:flex-row gap-8">
+              <div class="lg:w-1/2">
+                <h3 class="text-2xl font-bold text-secondary mb-6">Informasi Kontak</h3>
 
-              <form>
-                <div class="mb-6">
-                  <label for="name" class="block text-text font-medium mb-2">Nama Lengkap</label>
-                  <input
-                    type="text"
-                    id="name"
-                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-                  />
-                </div>
-
-                <div class="mb-6">
-                  <label for="email" class="block text-text font-medium mb-2">Email</label>
-                  <input
-                    type="email"
-                    id="email"
-                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-                  />
-                </div>
-
-                <div class="mb-6">
-                  <label for="phone" class="block text-text font-medium mb-2">Nomor Telepon</label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-                  />
-                </div>
-
-                <div class="mb-6">
-                  <label for="message" class="block text-text font-medium mb-2">Pesan</label>
-                  <textarea
-                    id="message"
-                    rows="5"
-                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-                  ></textarea>
-                </div>
-
-                <button
-                  type="submit"
-                  class="w-full bg-primary hover:bg-secondary text-white font-bold py-3 px-6 rounded-lg transition duration-300"
-                >
-                  Kirim Pesan
-                </button>
-              </form>
-            </div>
-          </div>
-
-          <div class="lg:w-1/2">
-            <div class="bg-light rounded-lg shadow-md p-8 h-full">
-              <h3 class="text-2xl font-bold text-secondary mb-6">Informasi Kontak</h3>
-
-              <div class="space-y-6">
-                <div class="flex items-start">
-                  <div
-                    class="w-10 h-10 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mr-4 mt-1 flex-none"
-                    data-aos="fade-right"
-                    data-aos-duration="800"
-                    data-aos-delay="0"
-                  >
-                    <i class="fas fa-map-marker-alt text-primary"></i>
+                <div class="space-y-6">
+                  <div class="flex items-start">
+                    <div
+                      class="w-10 h-10 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mr-4 mt-1 flex-none"
+                      data-aos="fade-right"
+                      data-aos-duration="800"
+                      data-aos-delay="0"
+                    >
+                      <i class="fas fa-map-marker-alt text-primary"></i>
+                    </div>
+                    <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
+                      <h4 class="font-bold text-secondary mb-1">Alamat</h4>
+                      <p class="text-text">
+                        Jl. Wahidin Sudiro Husodo No.36, Bramen, Sekarsuli, Kec. Klaten Utara, Kabupaten Klaten, Jawa Tengah 57438
+                      </p>
+                    </div>
                   </div>
-                  <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
-                    <h4 class="font-bold text-secondary mb-1">Alamat</h4>
-                    <p class="text-text">
-                      Jl. Wahidin Sudiro Husodo No.36, Bramen, Sekarsuli, Kec. Klaten Utara, Kabupaten Klaten, Jawa Tengah 57438
-                    </p>
+
+                  <div class="flex items-start">
+                    <div
+                      class="w-10 h-10 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mr-4 mt-1 flex-none"
+                      data-aos="fade-right"
+                      data-aos-duration="800"
+                      data-aos-delay="200"
+                    >
+                      <i class="fas fa-phone-alt text-primary"></i>
+                    </div>
+                    <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="300">
+                      <h4 class="font-bold text-secondary mb-1">Telepon</h4>
+                      <p class="text-text">0811 2653 630 (WhatsApp)</p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start">
+                    <div
+                      class="w-10 h-10 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mr-4 mt-1 flex-none"
+                      data-aos="fade-right"
+                      data-aos-duration="800"
+                      data-aos-delay="400"
+                    >
+                      <i class="fas fa-envelope text-primary"></i>
+                    </div>
+                    <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="500">
+                      <h4 class="font-bold text-secondary mb-1">Email</h4>
+                      <p class="text-text">Sayfelfalah@gmail.com</p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start">
+                    <div
+                      class="w-10 h-10 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mr-4 mt-1 flex-none"
+                      data-aos="fade-right"
+                      data-aos-duration="800"
+                      data-aos-delay="600"
+                    >
+                      <i class="fas fa-clock text-primary"></i>
+                    </div>
+                    <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="700">
+                      <h4 class="font-bold text-secondary mb-1">Jam Operasional</h4>
+                      <p class="text-text">Senin - Jumat: 07.00 - 16.00 WIB</p>
+                      <p class="text-text">Sabtu: 08.00 - 12.00 WIB</p>
+                      <p class="text-text">Minggu & Hari Libur: Tutup</p>
+                    </div>
                   </div>
                 </div>
 
-                <div class="flex items-start">
-                  <div
-                    class="w-10 h-10 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mr-4 mt-1 flex-none"
-                    data-aos="fade-right"
-                    data-aos-duration="800"
-                    data-aos-delay="200"
-                  >
-                    <i class="fas fa-phone-alt text-primary"></i>
-                  </div>
-                  <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="300">
-                    <h4 class="font-bold text-secondary mb-1">Telepon</h4>
-                    <p class="text-text">0811 2653 630 (WhatsApp)</p>
-                  </div>
-                </div>
-
-                <div class="flex items-start">
-                  <div
-                    class="w-10 h-10 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mr-4 mt-1 flex-none"
-                    data-aos="fade-right"
-                    data-aos-duration="800"
-                    data-aos-delay="400"
-                  >
-                    <i class="fas fa-envelope text-primary"></i>
-                  </div>
-                  <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="500">
-                    <h4 class="font-bold text-secondary mb-1">Email</h4>
-                    <p class="text-text">Sayfelfalah@gmail.com</p>
-                  </div>
-                </div>
-
-                <div class="flex items-start">
-                  <div
-                    class="w-10 h-10 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mr-4 mt-1 flex-none"
-                    data-aos="fade-right"
-                    data-aos-duration="800"
-                    data-aos-delay="600"
-                  >
-                    <i class="fas fa-clock text-primary"></i>
-                  </div>
-                  <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="700">
-                    <h4 class="font-bold text-secondary mb-1">Jam Operasional</h4>
-                    <p class="text-text">Senin - Jumat: 07.00 - 16.00 WIB</p>
-                    <p class="text-text">Sabtu: 08.00 - 12.00 WIB</p>
-                    <p class="text-text">Minggu & Hari Libur: Tutup</p>
+                <div class="mt-8">
+                  <h4 class="font-bold text-secondary mb-4">Ikuti Kami</h4>
+                  <div class="flex space-x-4">
+                    <a
+                      href="#"
+                      class="w-10 h-10 rounded-full bg-secondary hover:bg-primary text-white flex items-center justify-center transition duration-300"
+                    >
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a
+                      href="#"
+                      class="w-10 h-10 rounded-full bg-secondary hover:bg-primary text-white flex items-center justify-center transition duration-300"
+                    >
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a
+                      href="#"
+                      class="w-10 h-10 rounded-full bg-secondary hover:bg-primary text-white flex items-center justify-center transition duration-300"
+                    >
+                      <i class="fab fa-youtube"></i>
+                    </a>
+                    <a
+                      href="#"
+                      class="w-10 h-10 rounded-full bg-secondary hover:bg-primary text-white flex items-center justify-center transition duration-300"
+                    >
+                      <i class="fab fa-whatsapp"></i>
+                    </a>
                   </div>
                 </div>
               </div>
 
-              <div class="mt-8">
-                <h4 class="font-bold text-secondary mb-4">Ikuti Kami</h4>
-                <div class="flex space-x-4">
-                  <a
-                    href="#"
-                    class="w-10 h-10 rounded-full bg-secondary hover:bg-primary text-white flex items-center justify-center transition duration-300"
-                  >
-                    <i class="fab fa-facebook-f"></i>
-                  </a>
-                  <a
-                    href="#"
-                    class="w-10 h-10 rounded-full bg-secondary hover:bg-primary text-white flex items-center justify-center transition duration-300"
-                  >
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                  <a
-                    href="#"
-                    class="w-10 h-10 rounded-full bg-secondary hover:bg-primary text-white flex items-center justify-center transition duration-300"
-                  >
-                    <i class="fab fa-youtube"></i>
-                  </a>
-                  <a
-                    href="#"
-                    class="w-10 h-10 rounded-full bg-secondary hover:bg-primary text-white flex items-center justify-center transition duration-300"
-                  >
-                    <i class="fab fa-whatsapp"></i>
-                  </a>
+              <div class="lg:w-1/2">
+                <div class="h-64 lg:h-full bg-gray-200 rounded-lg overflow-hidden">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.11980438448148!2d110.60416700745394!3d-7.692070618370334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a4304e732ea4d%3A0x3a51e9f83b54f632!2sKB%20%26%20TK%20SAYF%20EL%20FALAH!5e0!3m2!1sid!2sid!4v1753072343013!5m2!1sid!2sid"
+                    width="100%"
+                    height="100%"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="mt-12 rounded-lg overflow-hidden shadow-xl">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.11980438448148!2d110.60416700745394!3d-7.692070618370334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a4304e732ea4d%3A0x3a51e9f83b54f632!2sKB%20%26%20TK%20SAYF%20EL%20FALAH!5e0!3m2!1sid!2sid!4v1753072343013!5m2!1sid!2sid"
-            width="100%"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-          ></iframe>
         </div>
       </div>
     </section>
@@ -1070,12 +1024,6 @@
       href="#home"
       id="backToTop"
       class="fixed bottom-20 right-6 w-12 h-12 bg-primary hover:bg-secondary text-white rounded-full flex items-center justify-center shadow-lg transition duration-300 opacity-0 invisible animate-bounce-slow z-50"
-      {{--
-      Tambahkan
-      z-50
-      di
-      sini
-      --}}
     >
       <i class="fas fa-arrow-up"></i>
     </a>

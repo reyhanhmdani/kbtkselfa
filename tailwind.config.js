@@ -11,7 +11,7 @@ module.exports = {
         secondary: "#2f308a",
         thirdy: "#00c2ff",
         green: "#c2ce3b",
-        text: "#1E1D1D",
+        text: "#000000",
       },
       animation: {
         "bounce-slow": "bounce 3s infinite",

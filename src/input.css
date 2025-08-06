@@ -153,10 +153,59 @@ body {
   transform: scale(1.05);
 }
 
-/* .about-childish-bg img {
-    position: relative;
-    z-index: 3;
-} */
+.testimonial-childish-bg {
+  background-image: url("/image/childish-5.jpg");
+  background-size: cover;
+  background-position: center; /* Posisikan gambar di tengah */
+  background-repeat: no-repeat; /* Jangan ulang gambar */
+  position: relative; /* Penting untuk overlay */
+  overflow: hidden; /* Pastikan tidak ada scroll aneh */
+}
+
+/* Pseudo-element untuk overlay transparan */
+.testimonial-childish-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(221, 243, 255, 0.75); /* Putih 75% transparan */
+  z-index: 1; /* Pastikan overlay di atas background tapi di bawah konten */
+}
+
+/* Pastikan konten di dalam section berada di atas overlay */
+.testimonial-childish-bg > .container {
+  position: relative;
+  z-index: 2;
+}
+
+.contactmap-childish-bg {
+  background-image: url("/image/childish-6.jpg");
+  background-size: cover;
+  background-position: center; /* Posisikan gambar di tengah */
+  background-repeat: no-repeat; /* Jangan ulang gambar */
+  position: relative; /* Penting untuk overlay */
+  overflow: hidden; /* Pastikan tidak ada scroll aneh */
+}
+
+/* Pseudo-element untuk overlay transparan */
+.contactmap-childish-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(221, 243, 255, 0.75); /* Putih 75% transparan */
+  z-index: 1; /* Pastikan overlay di atas background tapi di bawah konten */
+}
+
+/* Pastikan konten di dalam section berada di atas overlay */
+.contactmap-childish-bg > .container {
+  position: relative;
+  z-index: 2;
+}
 
 /* SD */
 .floating-nav-sd {
