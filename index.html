@@ -83,7 +83,7 @@
     <!-- Hero Section -->
     <section id="home" class="relative h-screen flex items-center justify-center">
       <div class="absolute inset-0 bg-gray-900">
-        <img src="gedungkbtk.jpg" alt="KB TK Selfa" class="w-full h-full object-cover opacity-70" />
+        <img src="gedungkbtk.jpg" alt="KB TK Selfa" class="w-full h-full object-cover opacity-60" />
       </div>
       <div class="hero-overlay absolute inset-0"></div>
 
@@ -114,12 +114,12 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-16 md:py-24 bg-light">
+    <section id="about" class="py-16 md:py-24 about-childish-bg">
       <div class="container mx-auto px-4">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4" data-aos="fade-up" data-aos-duration="800">Tentang Kami</h2>
-          <div class="w-20 h-1 bg-primary mx-auto mb-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100"></div>
-          <p class="text-lg text-text max-w-3xl mx-auto" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+        <div class="text-center mb-16" data-aos="fade-up" data-aos-duration="800">
+          <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Tentang Kami</h2>
+          <div class="w-20 h-1 bg-primary mx-auto mb-6" data-aos-delay="100"></div>
+          <p class="text-lg text-text max-w-3xl mx-auto" data-aos-delay="200">
             KB & TK Selfa adalah lembaga pendidikan anak usia dini yang berdedikasi untuk menciptakan lingkungan belajar yang optimal bagi
             perkembangan si kecil. Kami tidak hanya berkomitmen pada pendidikan berkualitas, tetapi juga berfokus pada pembentukan karakter
             Islami dan pengalaman belajar yang menyenangkan, terintegrasi dengan kehidupan sehari-hari anak.
@@ -167,7 +167,7 @@
     </section>
 
     <!-- Program Section -->
-    <section id="program" class="py-16 md:py-24 bg-white">
+    <section id="program" class="py-16 md:py-24 program-childish-bg">
       <div class="container mx-auto px-4">
         <div class="text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4" data-aos="fade-up" data-aos-duration="800">Program Unggulan</h2>
@@ -420,7 +420,7 @@
     </section>
 
     <!-- Gallery Section -->
-    <section id="gallery" class="py-16 md:py-24 bg-light">
+    <section id="gallery" class="py-16 md:py-24 gallery-childish-bg">
       <div class="container mx-auto px-4">
         <div class="text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4" data-aos="fade-up" data-aos-duration="800">Galeri Kegiatan</h2>
@@ -551,7 +551,7 @@
     </section>
 
     <!-- Team Section -->
-    <section id="team" class="py-16 md:py-24 bg-white">
+    <section id="team" class="py-16 md:py-24 team-childish-bg">
       <div class="container mx-auto px-4">
         <div class="text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4" data-aos="fade-up" data-aos-duration="800">Tim Pengajar Kami</h2>
@@ -1069,7 +1069,13 @@
     <a
       href="#home"
       id="backToTop"
-      class="fixed bottom-20 right-6 w-12 h-12 bg-primary hover:bg-secondary text-white rounded-full flex items-center justify-center shadow-lg transition duration-300 opacity-0 invisible animate-bounce-slow"
+      class="fixed bottom-20 right-6 w-12 h-12 bg-primary hover:bg-secondary text-white rounded-full flex items-center justify-center shadow-lg transition duration-300 opacity-0 invisible animate-bounce-slow z-50"
+      {{--
+      Tambahkan
+      z-50
+      di
+      sini
+      --}}
     >
       <i class="fas fa-arrow-up"></i>
     </a>

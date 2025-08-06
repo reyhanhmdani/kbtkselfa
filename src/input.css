@@ -24,16 +24,195 @@ body {
   background-color: white;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
+/* Program */
+.program-childish-bg {
+  background-image: url("/image/childish-1.jpg");
+  background-size: cover;
+  background-position: center; /* Posisikan gambar di tengah */
+  background-repeat: no-repeat; /* Jangan ulang gambar */
+  position: relative; /* Penting untuk overlay */
+  overflow: hidden; /* Pastikan tidak ada scroll aneh */
+}
+
+/* Pseudo-element untuk overlay transparan */
+.program-childish-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(221, 243, 255, 0.75); /* Putih 75% transparan */
+  z-index: 1; /* Pastikan overlay di atas background tapi di bawah konten */
+}
+
+/* Pastikan konten di dalam section berada di atas overlay */
+.program-childish-bg > .container {
+  position: relative;
+  z-index: 2;
+}
+.program-card {
+  position: relative;
+  overflow: hidden; /* Penting untuk rounded-xl */
+}
+
 .program-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
-.team-card:hover img {
-  transform: scale(1.05);
+/* Gallery */
+.gallery-childish-bg {
+  background-image: url("/image/childish-2.jpg");
+  background-size: cover;
+  background-position: center; /* Posisikan gambar di tengah */
+  background-repeat: no-repeat; /* Jangan ulang gambar */
+  position: relative; /* Penting untuk overlay */
+  overflow: hidden; /* Pastikan tidak ada scroll aneh */
+}
+
+/* Pseudo-element untuk overlay transparan */
+.gallery-childish-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(221, 243, 255, 0.75); /* Putih 75% transparan */
+  z-index: 1; /* Pastikan overlay di atas background tapi di bawah konten */
+}
+
+/* Pastikan konten di dalam section berada di atas overlay */
+.gallery-childish-bg > .container {
+  position: relative;
+  z-index: 2;
 }
 .gallery-item:hover img {
   transform: scale(1.1);
 }
 .stat-card:hover {
   transform: scale(1.05);
+}
+
+/* ABOUT */
+.about-childish-bg {
+  background-image: url("/image/IMG_3091.JPG");
+  background-size: cover;
+  background-position: center; /* Posisikan gambar di tengah */
+  background-repeat: no-repeat; /* Jangan ulang gambar */
+  position: relative; /* Penting untuk overlay */
+  overflow: hidden; /* Pastikan tidak ada scroll aneh */
+}
+
+/* Pseudo-element untuk overlay transparan */
+.about-childish-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(221, 243, 255, 0.75); /* Putih 75% transparan */
+  z-index: 1; /* Pastikan overlay di atas background tapi di bawah konten */
+}
+
+/* Pastikan konten di dalam section berada di atas overlay */
+.about-childish-bg > .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Team */
+.team-childish-bg {
+  background-image: url("/image/childish-3.jpg");
+  background-size: cover;
+  background-position: center; /* Posisikan gambar di tengah */
+  background-repeat: no-repeat; /* Jangan ulang gambar */
+  position: relative; /* Penting untuk overlay */
+  overflow: hidden; /* Pastikan tidak ada scroll aneh */
+}
+
+/* Pseudo-element untuk overlay transparan */
+.team-childish-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(221, 243, 255, 0.75); /* Putih 75% transparan */
+  z-index: 1; /* Pastikan overlay di atas background tapi di bawah konten */
+}
+
+/* Pastikan konten di dalam section berada di atas overlay */
+.team-childish-bg > .container {
+  position: relative;
+  z-index: 2;
+}
+.team-card:hover img {
+  transform: scale(1.05);
+}
+
+/* .about-childish-bg img {
+    position: relative;
+    z-index: 3;
+} */
+
+/* SD */
+.floating-nav-sd {
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.floating-nav-sd.scrolled {
+  background-color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.program-card-sd:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+.team-card-sd:hover img {
+  transform: scale(1.05);
+}
+.gallery-item-sd:hover img {
+  transform: scale(1.1);
+}
+.stat-card-sd:hover {
+  transform: scale(1.05);
+}
+
+/* ABOUT */
+.about-childish-bg-sd {
+  background-image: url("/image/IMG_3454.JPEG");
+  background-size: cover;
+  background-position: center; /* Posisikan gambar di tengah */
+  background-repeat: no-repeat; /* Jangan ulang gambar */
+  position: relative; /* Penting untuk overlay */
+  overflow: hidden; /* Pastikan tidak ada scroll aneh */
+}
+
+/* Pseudo-element untuk overlay transparan */
+.about-childish-bg-sd::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.75); /* Putih 75% transparan */
+  /* Anda bisa bereksperimen dengan warna overlay lain, misalnya: */
+  /* background-color: rgba(200, 230, 255, 0.6); /* Biru muda transparan */
+  /* background-color: rgba(255, 240, 200, 0.8); /* Kuning pastel transparan */
+  z-index: 1; /* Pastikan overlay di atas background tapi di bawah konten */
+}
+
+/* Pastikan konten di dalam section berada di atas overlay */
+.about-childish-bg-sd > .container {
+  position: relative;
+  z-index: 2;
 }
