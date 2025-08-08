@@ -9,134 +9,76 @@
     <link rel="stylesheet" href="./src/output.css" />
   </head>
   <body class="font-sans text-text">
-    <div class="fixed top-0 left-0 right-0 z-50">
-      <nav id="mainNav" class="floating-nav mt-4 py-3 mx-3 md:py-2 bg-white md:mt-4 md:mx-6">
-        <div class="container mx-auto px-4 md:px-6">
-          <div class="flex justify-between items-center relative">
-            <div class="flex items-center z-20">
-              <div class="w-12 h-12 rounded-full flex items-center justify-center mr-3">
-                <img src="logo-tk.png" alt="Logo TK Selfa" class="h-full w-full object-contain rounded-full" />
-              </div>
-              <a href="#" class="text-xl font-bold text-secondary">KB & TK <span class="text-primary">Selfa</span></a>
+    <nav id="mainNav" class="floating-nav-sd fixed top-0 left-0 right-0 z-50 bg-white md:bg-transparent py-3 md:py-4">
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="flex justify-between items-center relative">
+          <div class="flex items-center z-20">
+            <div class="w-12 h-12 rounded-full flex items-center justify-center mr-3">
+              <img src="logo-tk.png" alt="Logo TK Selfa" class="h-full w-full object-contain rounded-full" />
             </div>
+            <a href="#" class="text-xl font-bold text-secondary">KB & TK <span class="text-primary">Selfa</span></a>
+          </div>
 
-            <button id="hamburger-button" class="md:hidden p-2 z-20 focus:outline-none">
-              <span class="block w-6 h-0.5 bg-secondary transition-all duration-300 transform" id="line1"></span>
-              <span class="block w-6 h-0.5 bg-secondary my-1 transition-all duration-300" id="line2"></span>
-              <span class="block w-6 h-0.5 bg-secondary transition-all duration-300 transform" id="line3"></span>
-            </button>
+          <button id="hamburger-button" class="md:hidden p-2 z-20 focus:outline-none">
+            <span class="block w-6 h-0.5 bg-secondary transition-all duration-300 transform" id="line1"></span>
+            <span class="block w-6 h-0.5 bg-secondary my-1 transition-all duration-300" id="line2"></span>
+            <span class="block w-6 h-0.5 bg-secondary transition-all duration-300 transform" id="line3"></span>
+          </button>
 
-            <div class="hidden md:flex space-x-8 items-center">
-              <a href="#home" class="text-secondary hover:text-primary font-medium desktop-nav-link"
-                ><i class="fas fa-home text-lg mr-2"></i>Beranda</a
-              >
-              <a href="#about" class="text-secondary hover:text-primary font-medium desktop-nav-link"
-                ><i class="fas fa-info-circle text-lg mr-2"></i>Tentang Kami</a
-              >
-
-              <details class="relative group">
-                <summary
-                  class="text-secondary hover:text-primary font-medium flex items-center transition-colors duration-200 cursor-pointer marker:content-[''] desktop-nav-link"
-                >
-                  <i class="fas fa-lightbulb text-lg mr-2"></i>Program
-                  <i class="fas fa-chevron-down text-sm ml-2 transition-transform duration-300 group-open:rotate-180"></i>
-                </summary>
-                <ul class="absolute top-full left-1/2 transform -translate-x-1/2 w-48 bg-white rounded-md shadow-lg py-2 mt-2 z-50">
-                  <li>
-                    <a
-                      href="tk.html"
-                      class="block px-4 py-2 text-sm text-secondary hover:bg-gray-100 hover:text-primary transition-colors duration-200"
-                    >
-                      <i class="fas fa-graduation-cap text-lg mr-2"></i>Pra Sekolah (KB & TK)
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="sd.html"
-                      class="block px-4 py-2 text-sm text-secondary hover:bg-gray-100 hover:text-primary transition-colors duration-200"
-                    >
-                      <i class="fas fa-graduation-cap text-lg mr-2"></i>Sekolah Dasar (SD)
-                    </a>
-                  </li>
-                </ul>
-              </details>
-
-              <a href="#gallery" class="text-secondary hover:text-primary font-medium desktop-nav-link"
-                ><i class="fas fa-images text-lg mr-2"></i>Galeri</a
-              >
-              <a href="#contact" class="text-secondary hover:text-primary font-medium desktop-nav-link"
-                ><i class="fas fa-envelope text-lg mr-2"></i>Kontak</a
-              >
-            </div>
-
-            <div
-              id="mobile-menu-overlay"
-              class="fixed inset-0 bg-black bg-opacity-50 z-[9] opacity-0 invisible transition-all duration-500 ease-in-out md:hidden"
-            ></div>
-            <div
-              id="mobile-menu-container"
-              class="md:hidden fixed top-0 left-0 h-screen w-3/4 max-w-xs bg-white text-left flex flex-col justify-start py-8 -translate-x-full transition-transform duration-500 ease-in-out z-10 shadow-lg"
-              style="padding-top: 5rem"
+          <div class="hidden md:flex space-x-8">
+            <a href="#home" class="text-white hover:text-primary font-medium"><i class="fas fa-home text-lg mr-2"></i>Beranda</a>
+            <a href="#about" class="text-white hover:text-primary font-medium"
+              ><i class="fas fa-info-circle text-lg mr-2"></i>Tentang Kami</a
             >
-              <a
-                href="#home"
-                class="py-4 px-6 text-lg text-secondary hover:text-primary block border-b border-gray-200 hover:bg-gray-50 transition-colors duration-200"
-                data-nav-link
-                ><i class="fas fa-home text-lg mr-3 w-6 inline-block"></i>Beranda</a
-              >
-              <a
-                href="#about"
-                class="py-4 px-6 text-lg text-secondary hover:text-primary block border-b border-gray-200 hover:bg-gray-50 transition-colors duration-200"
-                data-nav-link
-                ><i class="fas fa-info-circle text-lg mr-3 w-6 inline-block"></i>Tentang Kami</a
-              >
+            <a href="#program" class="text-white hover:text-primary font-medium"><i class="fas fa-lightbulb text-lg mr-2"></i>Program</a>
+            <a href="#gallery" class="text-white hover:text-primary font-medium"><i class="fas fa-images text-lg mr-2"></i>Galeri</a>
+            <a href="#contact" class="text-white hover:text-primary font-medium"><i class="fas fa-envelope text-lg mr-2"></i>Kontak</a>
+          </div>
 
-              <details class="group border-b border-gray-200">
-                <summary
-                  class="flex items-center justify-between py-4 px-6 text-lg text-secondary hover:bg-gray-50 transition-colors duration-200 cursor-pointer marker:content-['']"
-                >
-                  <span class="flex items-center"> <i class="fas fa-lightbulb text-lg mr-3 w-6 inline-block"></i>Program </span>
-                  <i class="fas fa-chevron-down text-sm transition-transform duration-300 group-open:rotate-180"></i>
-                </summary>
-                <ul class="flex flex-col bg-gray-50">
-                  <li>
-                    <a
-                      href="tk.html"
-                      class="block py-3 px-12 text-secondary hover:text-primary transition-colors duration-200"
-                      data-nav-link
-                    >
-                      <i class="fas fa-graduation-cap text-lg mr-2"></i>Pra Sekolah (KB & TK)
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="sd.html"
-                      class="block py-3 px-12 text-secondary hover:text-primary transition-colors duration-200"
-                      data-nav-link
-                    >
-                      <i class="fas fa-graduation-cap text-lg mr-2"></i>Sekolah Dasar (SD)
-                    </a>
-                  </li>
-                </ul>
-              </details>
+          <div
+            id="mobile-menu-overlay"
+            class="fixed inset-0 bg-black bg-opacity-50 z-[9] opacity-0 invisible transition-all duration-500 ease-in-out md:hidden"
+          ></div>
 
-              <a
-                href="#gallery"
-                class="py-4 px-6 text-lg text-secondary hover:text-primary block border-b border-gray-200 hover:bg-gray-50 transition-colors duration-200"
-                data-nav-link
-                ><i class="fas fa-images text-lg mr-3 w-6 inline-block"></i>Galeri</a
-              >
-              <a
-                href="#contact"
-                class="py-4 px-6 text-lg text-secondary hover:text-primary block border-b border-gray-200 hover:bg-gray-50 transition-colors duration-200"
-                data-nav-link
-                ><i class="fas fa-envelope text-lg mr-3 w-6 inline-block"></i>Kontak</a
-              >
-            </div>
+          <div
+            id="mobile-menu-container"
+            class="md:hidden fixed top-0 left-0 h-screen w-3/4 max-w-xs bg-white text-left flex flex-col justify-start py-8 -translate-x-full transition-transform duration-500 ease-in-out z-10 shadow-lg"
+            style="padding-top: 5rem"
+          >
+            <a
+              href="#home"
+              class="py-4 px-6 text-lg text-secondary hover:text-primary block border-b border-gray-200 hover:bg-gray-50 transition-colors duration-200"
+              data-nav-link
+              ><i class="fas fa-home text-lg mr-3 w-6 inline-block"></i>Beranda</a
+            >
+            <a
+              href="#about"
+              class="py-4 px-6 text-lg text-secondary hover:text-primary block border-b border-gray-200 hover:bg-gray-50 transition-colors duration-200"
+              data-nav-link
+              ><i class="fas fa-info-circle text-lg mr-3 w-6 inline-block"></i>Tentang Kami</a
+            >
+            <a
+              href="#program"
+              class="py-4 px-6 text-lg text-secondary hover:text-primary block border-b border-gray-200 hover:bg-gray-50 transition-colors duration-200"
+              data-nav-link
+              ><i class="fas fa-lightbulb text-lg mr-3 w-6 inline-block"></i>Program</a
+            >
+            <a
+              href="#gallery"
+              class="py-4 px-6 text-lg text-secondary hover:text-primary block border-b border-gray-200 hover:bg-gray-50 transition-colors duration-200"
+              data-nav-link
+              ><i class="fas fa-images text-lg mr-3 w-6 inline-block"></i>Galeri</a
+            >
+            <a
+              href="#contact"
+              class="py-4 px-6 text-lg text-secondary hover:text-primary block border-b border-gray-200 hover:bg-gray-50 transition-colors duration-200"
+              data-nav-link
+              ><i class="fas fa-envelope text-lg mr-3 w-6 inline-block"></i>Kontak</a
+            >
           </div>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
 
     <!-- Hero Section -->
     <section id="home" class="relative h-screen flex items-center justify-center">
@@ -172,7 +114,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-16 md:py-24 about-childish-bg">
+    <section id="about" class="py-16 md:py-24 about-childish-bg-sd">
       <div class="container mx-auto px-4">
         <div class="text-center mb-16" data-aos="fade-up" data-aos-duration="800">
           <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Tentang Kami</h2>
@@ -189,7 +131,7 @@
             <img src="visimisi.JPEG" alt="TK Selfa" class="rounded-lg shadow-xl w-full h-auto" />
           </div>
 
-          <div class="lg:w-1/2 bg-white bg-opacity-70 rounded-2xl border border-gray-300 p-5 inline-bloc">
+          <div class="lg:w-1/2">
             <h3 class="text-2xl font-bold text-secondary mb-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
               Visi & Misi Kami
             </h3>
@@ -225,7 +167,7 @@
     </section>
 
     <!-- Program Section -->
-    <section id="program" class="py-16 md:py-24 program-childish-bg">
+    <section id="program" class="py-16 md:py-24 bg-white">
       <div class="container mx-auto px-4">
         <div class="text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4" data-aos="fade-up" data-aos-duration="800">Program Unggulan</h2>
@@ -239,7 +181,7 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div
-            class="program-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl border-l-4 border-primary hover:border-secondary"
+            class="program-card-sd bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl border-l-4 border-primary hover:border-secondary"
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delay="300"
@@ -263,7 +205,7 @@
           </div>
 
           <div
-            class="program-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl border-l-4 border-primary hover:border-secondary"
+            class="program-card-sd bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl border-l-4 border-primary hover:border-secondary"
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delay="400"
@@ -287,7 +229,7 @@
           </div>
 
           <div
-            class="program-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl border-l-4 border-primary hover:border-secondary"
+            class="program-card-sd bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl border-l-4 border-primary hover:border-secondary"
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delay="500"
@@ -311,7 +253,7 @@
           </div>
 
           <div
-            class="program-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl border-l-4 border-primary hover:border-secondary"
+            class="program-card-sd bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl border-l-4 border-primary hover:border-secondary"
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delay="600"
@@ -335,7 +277,7 @@
           </div>
 
           <div
-            class="program-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl border-l-4 border-primary hover:border-secondary"
+            class="program-card-sd bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl border-l-4 border-primary hover:border-secondary"
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delay="700"
@@ -359,7 +301,7 @@
           </div>
 
           <div
-            class="program-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl border-l-4 border-primary hover:border-secondary"
+            class="program-card-sd bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl border-l-4 border-primary hover:border-secondary"
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delay="800"
@@ -383,7 +325,7 @@
           </div>
 
           <div
-            class="program-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl border-l-4 border-primary hover:border-secondary"
+            class="program-card-sd bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl border-l-4 border-primary hover:border-secondary"
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delay="900"
@@ -407,7 +349,7 @@
           </div>
 
           <div
-            class="program-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl border-l-4 border-primary hover:border-secondary"
+            class="program-card-sd bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl border-l-4 border-primary hover:border-secondary"
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delay="1000"
@@ -429,7 +371,7 @@
           </div>
 
           <div
-            class="program-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl border-l-4 border-primary hover:border-secondary"
+            class="program-card-sd bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl border-l-4 border-primary hover:border-secondary"
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delay="1100"
@@ -453,7 +395,7 @@
           </div>
 
           <div
-            class="program-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl border-l-4 border-primary hover:border-secondary"
+            class="program-card-sd bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl border-l-4 border-primary hover:border-secondary"
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delay="1200"
@@ -478,7 +420,7 @@
     </section>
 
     <!-- Gallery Section -->
-    <section id="gallery" class="py-16 md:py-24 gallery-childish-bg">
+    <section id="gallery" class="py-16 md:py-24 bg-light">
       <div class="container mx-auto px-4">
         <div class="text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4" data-aos="fade-up" data-aos-duration="800">Galeri Kegiatan</h2>
@@ -490,7 +432,7 @@
 
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           <div
-            class="gallery-item overflow-hidden rounded-lg shadow-md cursor-pointer"
+            class="gallery-item-sd overflow-hidden rounded-lg shadow-md cursor-pointer"
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delay="300"
@@ -503,7 +445,7 @@
           </div>
 
           <div
-            class="gallery-item overflow-hidden rounded-lg shadow-md cursor-pointer"
+            class="gallery-item-sd overflow-hidden rounded-lg shadow-md cursor-pointer"
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delay="400"
@@ -516,7 +458,7 @@
           </div>
 
           <div
-            class="gallery-item overflow-hidden rounded-lg shadow-md cursor-pointer"
+            class="gallery-item-sd overflow-hidden rounded-lg shadow-md cursor-pointer"
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delay="500"
@@ -529,7 +471,7 @@
           </div>
 
           <div
-            class="gallery-item overflow-hidden rounded-lg shadow-md cursor-pointer"
+            class="gallery-item-sd overflow-hidden rounded-lg shadow-md cursor-pointer"
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delay="600"
@@ -542,7 +484,7 @@
           </div>
 
           <div
-            class="gallery-item overflow-hidden rounded-lg shadow-md cursor-pointer"
+            class="gallery-item-sd overflow-hidden rounded-lg shadow-md cursor-pointer"
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delay="700"
@@ -555,7 +497,7 @@
           </div>
 
           <div
-            class="gallery-item overflow-hidden rounded-lg shadow-md cursor-pointer"
+            class="gallery-item-sd overflow-hidden rounded-lg shadow-md cursor-pointer"
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delay="800"
@@ -568,7 +510,7 @@
           </div>
 
           <div
-            class="gallery-item overflow-hidden rounded-lg shadow-md cursor-pointer"
+            class="gallery-item-sd overflow-hidden rounded-lg shadow-md cursor-pointer"
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delay="900"
@@ -581,7 +523,7 @@
           </div>
 
           <div
-            class="gallery-item overflow-hidden rounded-lg shadow-md cursor-pointer"
+            class="gallery-item-sd overflow-hidden rounded-lg shadow-md cursor-pointer"
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delay="1000"
@@ -609,7 +551,7 @@
     </section>
 
     <!-- Team Section -->
-    <section id="team" class="py-16 md:py-24 team-childish-bg">
+    <section id="team" class="py-16 md:py-24 bg-white">
       <div class="container mx-auto px-4">
         <div class="text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4" data-aos="fade-up" data-aos-duration="800">Tim Pengajar Kami</h2>
@@ -621,7 +563,7 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <div
-            class="team-card bg-light rounded-lg overflow-hidden shadow-md text-center p-6"
+            class="team-card-sd bg-light rounded-lg overflow-hidden shadow-md text-center p-6"
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delay="300"
@@ -645,7 +587,7 @@
           </div>
 
           <div
-            class="team-card bg-light rounded-lg overflow-hidden shadow-md text-center p-6"
+            class="team-card-sd bg-light rounded-lg overflow-hidden shadow-md text-center p-6"
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delay="400"
@@ -669,7 +611,7 @@
           </div>
 
           <div
-            class="team-card bg-light rounded-lg overflow-hidden shadow-md text-center p-6"
+            class="team-card-sd bg-light rounded-lg overflow-hidden shadow-md text-center p-6"
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delay="500"
@@ -693,7 +635,7 @@
           </div>
 
           <div
-            class="team-card bg-light rounded-lg overflow-hidden shadow-md text-center p-6"
+            class="team-card-sd bg-light rounded-lg overflow-hidden shadow-md text-center p-6"
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delay="600"
@@ -738,7 +680,7 @@
       <div class="container mx-auto px-4">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           <div
-            class="stat-card bg-white bg-opacity-20 p-6 rounded-xl backdrop-blur-sm transition duration-300 hover:bg-opacity-30 hover:shadow-lg"
+            class="stat-card-sd bg-white bg-opacity-20 p-6 rounded-xl backdrop-blur-sm transition duration-300 hover:bg-opacity-30 hover:shadow-lg"
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delay="0"
@@ -748,7 +690,7 @@
           </div>
 
           <div
-            class="stat-card bg-white bg-opacity-20 p-6 rounded-xl backdrop-blur-sm transition duration-300 hover:bg-opacity-30 hover:shadow-lg"
+            class="stat-card-sd bg-white bg-opacity-20 p-6 rounded-xl backdrop-blur-sm transition duration-300 hover:bg-opacity-30 hover:shadow-lg"
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delay="100"
@@ -758,7 +700,7 @@
           </div>
 
           <div
-            class="stat-card bg-white bg-opacity-20 p-6 rounded-xl backdrop-blur-sm transition duration-300 hover:bg-opacity-30 hover:shadow-lg"
+            class="stat-card-sd bg-white bg-opacity-20 p-6 rounded-xl backdrop-blur-sm transition duration-300 hover:bg-opacity-30 hover:shadow-lg"
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delay="200"
@@ -768,7 +710,7 @@
           </div>
 
           <div
-            class="stat-card bg-white bg-opacity-20 p-6 rounded-xl backdrop-blur-sm transition duration-300 hover:bg-opacity-30 hover:shadow-lg"
+            class="stat-card-sd bg-white bg-opacity-20 p-6 rounded-xl backdrop-blur-sm transition duration-300 hover:bg-opacity-30 hover:shadow-lg"
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delay="300"
@@ -781,7 +723,7 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="py-16 md:py-24 testimonial-childish-bg">
+    <section class="py-16 md:py-24 bg-light">
       <div class="container mx-auto px-4">
         <div class="text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Apa Kata Orang Tua?</h2>
@@ -868,7 +810,7 @@
     </section>
 
     <!-- Contact & Map Section -->
-    <section id="contact" class="py-16 md:py-24 contactmap-childish-bg">
+    <section id="contact" class="py-16 md:py-24 bg-white">
       <div class="container mx-auto px-4">
         <div class="text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Hubungi Kami</h2>
@@ -879,123 +821,169 @@
         </div>
 
         <div class="flex flex-col lg:flex-row gap-12">
-          <div class="w-full">
-            <div class="bg-light rounded-lg shadow-md p-8 h-full flex flex-col lg:flex-row gap-8">
-              <div class="lg:w-1/2">
-                <h3 class="text-2xl font-bold text-secondary mb-6">Informasi Kontak</h3>
+          <div class="lg:w-1/2">
+            <div class="bg-light rounded-lg shadow-md p-8">
+              <h3 class="text-2xl font-bold text-secondary mb-6">Kirim Pesan</h3>
 
-                <div class="space-y-6">
-                  <div class="flex items-start">
-                    <div
-                      class="w-10 h-10 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mr-4 mt-1 flex-none"
-                      data-aos="fade-right"
-                      data-aos-duration="800"
-                      data-aos-delay="0"
-                    >
-                      <i class="fas fa-map-marker-alt text-primary"></i>
-                    </div>
-                    <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
-                      <h4 class="font-bold text-secondary mb-1">Alamat</h4>
-                      <p class="text-text">
-                        Jl. Wahidin Sudiro Husodo No.36, Bramen, Sekarsuli, Kec. Klaten Utara, Kabupaten Klaten, Jawa Tengah 57438
-                      </p>
-                    </div>
+              <form>
+                <div class="mb-6">
+                  <label for="name" class="block text-text font-medium mb-2">Nama Lengkap</label>
+                  <input
+                    type="text"
+                    id="name"
+                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                  />
+                </div>
+
+                <div class="mb-6">
+                  <label for="email" class="block text-text font-medium mb-2">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                  />
+                </div>
+
+                <div class="mb-6">
+                  <label for="phone" class="block text-text font-medium mb-2">Nomor Telepon</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                  />
+                </div>
+
+                <div class="mb-6">
+                  <label for="message" class="block text-text font-medium mb-2">Pesan</label>
+                  <textarea
+                    id="message"
+                    rows="5"
+                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="w-full bg-primary hover:bg-secondary text-white font-bold py-3 px-6 rounded-lg transition duration-300"
+                >
+                  Kirim Pesan
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div class="lg:w-1/2">
+            <div class="bg-light rounded-lg shadow-md p-8 h-full">
+              <h3 class="text-2xl font-bold text-secondary mb-6">Informasi Kontak</h3>
+
+              <div class="space-y-6">
+                <div class="flex items-start">
+                  <div
+                    class="w-10 h-10 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mr-4 mt-1 flex-none"
+                    data-aos="fade-right"
+                    data-aos-duration="800"
+                    data-aos-delay="0"
+                  >
+                    <i class="fas fa-map-marker-alt text-primary"></i>
                   </div>
-
-                  <div class="flex items-start">
-                    <div
-                      class="w-10 h-10 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mr-4 mt-1 flex-none"
-                      data-aos="fade-right"
-                      data-aos-duration="800"
-                      data-aos-delay="200"
-                    >
-                      <i class="fas fa-phone-alt text-primary"></i>
-                    </div>
-                    <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="300">
-                      <h4 class="font-bold text-secondary mb-1">Telepon</h4>
-                      <p class="text-text">0811 2653 630 (WhatsApp)</p>
-                    </div>
-                  </div>
-
-                  <div class="flex items-start">
-                    <div
-                      class="w-10 h-10 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mr-4 mt-1 flex-none"
-                      data-aos="fade-right"
-                      data-aos-duration="800"
-                      data-aos-delay="400"
-                    >
-                      <i class="fas fa-envelope text-primary"></i>
-                    </div>
-                    <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="500">
-                      <h4 class="font-bold text-secondary mb-1">Email</h4>
-                      <p class="text-text">Sayfelfalah@gmail.com</p>
-                    </div>
-                  </div>
-
-                  <div class="flex items-start">
-                    <div
-                      class="w-10 h-10 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mr-4 mt-1 flex-none"
-                      data-aos="fade-right"
-                      data-aos-duration="800"
-                      data-aos-delay="600"
-                    >
-                      <i class="fas fa-clock text-primary"></i>
-                    </div>
-                    <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="700">
-                      <h4 class="font-bold text-secondary mb-1">Jam Operasional</h4>
-                      <p class="text-text">Senin - Jumat: 07.00 - 16.00 WIB</p>
-                      <p class="text-text">Sabtu: 08.00 - 12.00 WIB</p>
-                      <p class="text-text">Minggu & Hari Libur: Tutup</p>
-                    </div>
+                  <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
+                    <h4 class="font-bold text-secondary mb-1">Alamat</h4>
+                    <p class="text-text">
+                      Jl. Wahidin Sudiro Husodo No.36, Bramen, Sekarsuli, Kec. Klaten Utara, Kabupaten Klaten, Jawa Tengah 57438
+                    </p>
                   </div>
                 </div>
 
-                <div class="mt-8">
-                  <h4 class="font-bold text-secondary mb-4">Ikuti Kami</h4>
-                  <div class="flex space-x-4">
-                    <a
-                      href="#"
-                      class="w-10 h-10 rounded-full bg-secondary hover:bg-primary text-white flex items-center justify-center transition duration-300"
-                    >
-                      <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a
-                      href="#"
-                      class="w-10 h-10 rounded-full bg-secondary hover:bg-primary text-white flex items-center justify-center transition duration-300"
-                    >
-                      <i class="fab fa-instagram"></i>
-                    </a>
-                    <a
-                      href="#"
-                      class="w-10 h-10 rounded-full bg-secondary hover:bg-primary text-white flex items-center justify-center transition duration-300"
-                    >
-                      <i class="fab fa-youtube"></i>
-                    </a>
-                    <a
-                      href="#"
-                      class="w-10 h-10 rounded-full bg-secondary hover:bg-primary text-white flex items-center justify-center transition duration-300"
-                    >
-                      <i class="fab fa-whatsapp"></i>
-                    </a>
+                <div class="flex items-start">
+                  <div
+                    class="w-10 h-10 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mr-4 mt-1 flex-none"
+                    data-aos="fade-right"
+                    data-aos-duration="800"
+                    data-aos-delay="200"
+                  >
+                    <i class="fas fa-phone-alt text-primary"></i>
+                  </div>
+                  <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="300">
+                    <h4 class="font-bold text-secondary mb-1">Telepon</h4>
+                    <p class="text-text">0811 2653 630 (WhatsApp)</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div
+                    class="w-10 h-10 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mr-4 mt-1 flex-none"
+                    data-aos="fade-right"
+                    data-aos-duration="800"
+                    data-aos-delay="400"
+                  >
+                    <i class="fas fa-envelope text-primary"></i>
+                  </div>
+                  <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="500">
+                    <h4 class="font-bold text-secondary mb-1">Email</h4>
+                    <p class="text-text">Sayfelfalah@gmail.com</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div
+                    class="w-10 h-10 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mr-4 mt-1 flex-none"
+                    data-aos="fade-right"
+                    data-aos-duration="800"
+                    data-aos-delay="600"
+                  >
+                    <i class="fas fa-clock text-primary"></i>
+                  </div>
+                  <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="700">
+                    <h4 class="font-bold text-secondary mb-1">Jam Operasional</h4>
+                    <p class="text-text">Senin - Jumat: 07.00 - 16.00 WIB</p>
+                    <p class="text-text">Sabtu: 08.00 - 12.00 WIB</p>
+                    <p class="text-text">Minggu & Hari Libur: Tutup</p>
                   </div>
                 </div>
               </div>
 
-              <div class="lg:w-1/2">
-                <div class="h-64 lg:h-full bg-gray-200 rounded-lg overflow-hidden">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.11980438448148!2d110.60416700745394!3d-7.692070618370334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a4304e732ea4d%3A0x3a51e9f83b54f632!2sKB%20%26%20TK%20SAYF%20EL%20FALAH!5e0!3m2!1sid!2sid!4v1753072343013!5m2!1sid!2sid"
-                    width="100%"
-                    height="100%"
-                    style="border: 0"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                  ></iframe>
+              <div class="mt-8">
+                <h4 class="font-bold text-secondary mb-4">Ikuti Kami</h4>
+                <div class="flex space-x-4">
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full bg-secondary hover:bg-primary text-white flex items-center justify-center transition duration-300"
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full bg-secondary hover:bg-primary text-white flex items-center justify-center transition duration-300"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full bg-secondary hover:bg-primary text-white flex items-center justify-center transition duration-300"
+                  >
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full bg-secondary hover:bg-primary text-white flex items-center justify-center transition duration-300"
+                  >
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+
+        <div class="mt-12 rounded-lg overflow-hidden shadow-xl">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.11980438448148!2d110.60416700745394!3d-7.692070618370334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a4304e732ea4d%3A0x3a51e9f83b54f632!2sKB%20%26%20TK%20SAYF%20EL%20FALAH!5e0!3m2!1sid!2sid!4v1753072343013!5m2!1sid!2sid"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
         </div>
       </div>
     </section>
@@ -1072,17 +1060,19 @@
         </div>
 
         <div class="border-t border-gray-700 mt-12 pt-8 text-center">
-          <p>&copy; 2025 KB & TK Selfa. All Rights Reserved.</p>
+          <p>&copy; 2025 Sekolah Dasar Selfa. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
 
     <!-- Back to Top Button -->
-    <a
+     <a
       href="#home"
       id="backToTop"
       class="fixed bottom-20 right-6 w-12 h-12 bg-primary hover:bg-secondary text-white rounded-full flex items-center justify-center shadow-lg transition duration-300 opacity-0 invisible animate-bounce-slow z-50"
     >
+      <i class="fas fa-arrow-up"></i>
+    </a>
       <i class="fas fa-arrow-up"></i>
     </a>
 

@@ -1,9 +1,5 @@
-// --- JS YANG DISEMPURNAKAN UNTUK SELURUH FUNGSI ---
-
 document.addEventListener("DOMContentLoaded", () => {
-  // ----------------------------------------------------
-  // Seleksi Elemen
-  // ----------------------------------------------------
+  // --- Seleksi Elemen ---
   const hamburgerButton = document.getElementById("hamburger-button");
   const mobileMenuContainer = document.getElementById("mobile-menu-container");
   const mobileMenuOverlay = document.getElementById("mobile-menu-overlay");
@@ -13,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const line3 = document.getElementById("line3");
 
   const mainNav = document.getElementById("mainNav");
-  const navLinksDesktop = document.querySelectorAll("#mainNav .space-x-8 a");
+  // const navLinksDesktop = document.querySelectorAll("#mainNav .space-x-8 a, #mainNav .space-x-8 summary"); // Hapus baris ini
   const backToTopButton = document.getElementById("backToTop");
 
   // ----------------------------------------------------
@@ -24,7 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
     mobileMenuOverlay.classList.toggle("opacity-0");
     mobileMenuOverlay.classList.toggle("invisible");
 
-    // Toggle animasi hamburger
     line1.classList.toggle("rotate-45");
     line1.classList.toggle("translate-y-1.5");
     line2.classList.toggle("opacity-0");
@@ -44,34 +39,20 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // ----------------------------------------------------
-  // Fungsi untuk Efek Scroll Navbar
+  // Fungsi untuk Efek Scroll (hanya Back to Top)
   // ----------------------------------------------------
   const handleScroll = () => {
-    const isScrolled = window.scrollY > 100;
-
-    mainNav.classList.toggle("scrolled", isScrolled);
-    mainNav.classList.toggle("md:bg-white", isScrolled);
-    mainNav.classList.toggle("md:bg-transparent", !isScrolled);
-
-    const isMobileMenuOpen = !mobileMenuContainer.classList.contains("-translate-x-full");
-
-    if (!isMobileMenuOpen) {
-      navLinksDesktop.forEach((link) => {
-        link.classList.toggle("text-secondary", isScrolled);
-        link.classList.toggle("text-white", !isScrolled);
-      });
-    }
-
     // Tampilkan/sembunyikan tombol Back to Top
     const isFarDown = window.scrollY > 300;
-    backToTopButton.classList.toggle("opacity-100", isFarDown);
-    backToTopButton.classList.toggle("visible", isFarDown);
-    backToTopButton.classList.toggle("opacity-0", !isFarDown);
-    backToTopButton.classList.toggle("invisible", !isFarDown);
+    if (backToTopButton) {
+      backToTopButton.classList.toggle("opacity-100", isFarDown);
+      backToTopButton.classList.toggle("visible", isFarDown);
+      backToTopButton.classList.toggle("opacity-0", !isFarDown);
+      backToTopButton.classList.toggle("invisible", !isFarDown);
+    }
   };
 
   window.addEventListener("scroll", handleScroll);
-  // Jalankan sekali saat load agar kondisi awal sesuai
   handleScroll();
 
   // ----------------------------------------------------
@@ -79,13 +60,16 @@ document.addEventListener("DOMContentLoaded", () => {
   // ----------------------------------------------------
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
+      if (this.getAttribute("href") === "#") {
+        return;
+      }
       e.preventDefault();
       const targetId = this.getAttribute("href");
       const targetElement = document.querySelector(targetId);
 
       if (targetElement) {
-        const navHeight = mainNav.offsetHeight; // Ambil tinggi navbar
-        const offsetPosition = targetElement.offsetTop - navHeight; // Kurangi dengan tinggi navbar
+        const navHeight = mainNav.offsetHeight;
+        const offsetPosition = targetElement.offsetTop - navHeight;
 
         window.scrollTo({
           top: offsetPosition,

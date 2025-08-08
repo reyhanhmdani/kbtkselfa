@@ -18,11 +18,17 @@ body {
 }
 .floating-nav {
   transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 3rem;
+  box-shadow: none;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  -ms-border-radius: 3rem;
+  -o-border-radius: 3rem;
 }
+
 .floating-nav.scrolled {
-  background-color: white;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background-color: white; /* Berubah menjadi putih saat di-scroll */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Muncul bayangan */
 }
 
 /* ABOUT */
