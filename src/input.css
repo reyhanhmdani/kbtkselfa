@@ -43,7 +43,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(221, 255, 236, 0.797); /* Putih 75% transparan */
+  background-color: rgba(221, 243, 255, 0.75); /* Putih 75% transparan */
   z-index: 1; /* Pastikan overlay di atas background tapi di bawah konten */
 }
 
@@ -71,7 +71,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(221, 255, 236, 0.797); /* Putih 75% transparan */
+  background-color: rgba(221, 243, 255, 0.75); /* Putih 75% transparan */
   z-index: 1; /* Pastikan overlay di atas background tapi di bawah konten */
 }
 
@@ -84,13 +84,7 @@ body {
   position: relative;
   overflow: hidden; /* Penting untuk rounded-xl */
 }
-
 .program-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
-
-.program-card-sd:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
@@ -112,7 +106,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(221, 255, 236, 0.797);; /* Putih 75% transparan */
+  background-color: rgba(221, 243, 255, 0.75); /* Putih 75% transparan */
   z-index: 1; /* Pastikan overlay di atas background tapi di bawah konten */
 }
 
@@ -146,7 +140,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(221, 255, 236, 0.797); /* Putih 75% transparan */
+  background-color: rgba(221, 243, 255, 0.75); /* Putih 75% transparan */
   z-index: 1; /* Pastikan overlay di atas background tapi di bawah konten */
 }
 
@@ -176,7 +170,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(221, 255, 236, 0.797); /* Putih 75% transparan */
+  background-color: rgba(221, 243, 255, 0.75); /* Putih 75% transparan */
   z-index: 1; /* Pastikan overlay di atas background tapi di bawah konten */
 }
 
@@ -203,7 +197,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(221, 255, 236, 0.797); /* Putih 75% transparan */
+  background-color: rgba(221, 243, 255, 0.75); /* Putih 75% transparan */
   z-index: 1; /* Pastikan overlay di atas background tapi di bawah konten */
 }
 
@@ -227,6 +221,10 @@ body {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+.program-card-sd:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
 .team-card-sd:hover img {
   transform: scale(1.05);
 }
