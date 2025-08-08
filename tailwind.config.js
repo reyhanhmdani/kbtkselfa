@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         "menu-overlay": "rgba(255, 255, 255, 0.8)",
         primary: "#00ab66",
+        dark: "#00ab66",
         yellow: "#f8f806",
         light: "#f8f8f8",
         secondary: "#2f308a",
